@@ -1,80 +1,137 @@
 <p align="center">
-  <img src="site/public/favicon.svg" alt="PocketVibe icon" width="88">
+  <a href="https://github.com/cobanov/pocketvibe">
+    <img src="https://raw.githubusercontent.com/cobanov/pocketvibe/main/site/public/favicon.svg" alt="PocketVibe icon" width="88">
+  </a>
 </p>
 
-<h1 align="center">PocketVibe</h1>
+<h1 align="center">PocketVibe for webOS</h1>
 
 <p align="center">
-  <strong>Play three.js games on your retro handheld. Make your own with AI.</strong><br>
-  A launcher, a game store and a starter kit for ROCKNIX and Android handhelds.
-</p>
-
-<p align="center">
-  <a href="https://pocketvibe.cobanov.dev/download/rocknix"><strong>Download for ROCKNIX</strong></a> ·
-  <a href="https://pocketvibe.cobanov.dev/download/android"><strong>Download for Android</strong></a> ·
-  <a href="https://pocketvibe.cobanov.dev">Website</a> ·
-  <a href="https://pocketvibe.cobanov.dev/how/">How it works</a> ·
-  <a href="https://github.com/cobanov/pocketvibe/issues">Issues</a>
-</p>
-
-PocketVibe turns a retro handheld into a little console for web games. It comes with 21 three.js
-games, a store to download more with one button, and everything you need to make your own with
-an AI coding tool like Claude Code, Codex or Cursor and play it on your own device. Free and open
-source, no account needed.
-
-<p align="center">
-  <a href="docs/screenshots/library.png"><img src="docs/screenshots/library.png" alt="The Library: five game covers in a grid, with the tabs and the handheld's buttons as hints" width="360"></a>
-  <a href="docs/screenshots/store.png"><img src="docs/screenshots/store.png" alt="The Store: 21 games with their covers and sizes" width="360"></a>
+  <strong>An unofficial webOS port of PocketVibe for smart TVs.</strong>
   <br>
-  <sub>The launcher at the handheld's 720×480. Play every game in your browser on the <a href="https://pocketvibe.cobanov.dev">website</a>.</sub>
+  Bringing browser-based Three.js games to compatible webOS televisions.
 </p>
 
-## A console for the games you vibe-code.
+<p align="center">
+  <a href="https://github.com/tolgakurtuluss/pocketvibe-webos/releases/latest"><strong>⬇ Download for webOS (.IPK)</strong></a>
+  ·
+  <a href="https://github.com/tolgakurtuluss/pocketvibe-webos/releases"><strong>All Releases & Source Code</strong></a>
+  ·
+  <a href="https://github.com/tolgakurtuluss/pocketvibe-webos">Source Repository</a>
+</p>
 
-- **Games in one press.** It starts with five games, and the store has the rest: press A, watch it download, play. Updates arrive on their own.
-- **Runs on ROCKNIX and Android.** Tested on the Anbernic RG34XX SP, RG34XX and RG DS with ROCKNIX, and the RG Rotate with Android.
-- **Fits every screen.** Games fill 3:2, 4:3, 16:9 and square screens, and on the two-screen RG DS a game can use both.
-- **Feels like a console.** Menus with their own sounds and music, everything on the handheld's buttons, and Start + Select to leave a game any time.
-- **Make your own with AI.** Give your coding agent [one link](https://pocketvibe.cobanov.dev/agents.md): it learns the handheld's screen, buttons and measured limits, and writes games that hold 60 fps there.
-- **Play it on your handheld while you make it.** `npx pocketvibe serve` puts the game you are working on in your handheld's store, and every change arrives as an update.
-- **Share it.** `npx pocketvibe publish` opens a pull request to [the store](https://github.com/cobanov/pocketvibe-store), like F-Droid: your game is built from its source and reviewed in the open, and once merged it is on every PocketVibe handheld.
+<p align="center">
+  <strong>Install the TV version from GitHub Releases.</strong>
+  <br>
+  Download the <code>.ipk</code> package to install the app, or browse the source code to build it yourself.
+</p>
 
-## Try it
-
-Just curious? The [website](https://pocketvibe.cobanov.dev) runs the real launcher with every game
-in your browser.
-
-**On ROCKNIX** (not muOS or other firmware), with a 64-bit Arm chip, 1 GB of RAM, Wi-Fi and about
-1 GB free on the SD card:
-
-1. Download [PocketVibe.zip](https://pocketvibe.cobanov.dev/download/rocknix).
-2. Turn on Samba in ROCKNIX's network settings, open the handheld's `games-roms` share and unzip it into `ports`.
-3. Restart the handheld, open **Ports**, then **PocketVibe**. The first start sets up the game engine (about 150 MB, a minute and a half).
-
-**On Android** (10 or newer): open [pocketvibe.cobanov.dev/download/android](https://pocketvibe.cobanov.dev/download/android) on the handheld and install the APK.
-
-**Make a game:**
-
-```sh
-npm create pocketvibe@latest my-game
-```
-
-Then tell your AI tool: "Read https://pocketvibe.cobanov.dev/agents.md and follow it. Then make me
-a PocketVibe game: ...". [Make a game](https://pocketvibe.cobanov.dev/make/) walks through the rest.
-
-## Want to tinker?
-
-On ROCKNIX, a small Python service and an HTML launcher run WPE WebKit and Cog from a Debian root;
-on Android, a Kotlin app runs the same launcher in a WebView. The store is a Cloudflare Worker with
-D1 and R2. [How it works](https://pocketvibe.cobanov.dev/how/) explains it all in a few minutes.
-
-[Development](docs/development.md) ·
-[Contributing](CONTRIBUTING.md) ·
-[Rules for AI tools](template/AGENTS.md) ·
-[Performance guide](docs/performance.md) ·
-[Command line tool](packages/pocketvibe/README.md) ·
-[Benchmarks](bench/README.md)
+<p align="center">
+  <a href="https://github.com/cobanov/pocketvibe"><strong>Original PocketVibe Project</strong></a> ·
+  <a href="https://pocketvibe.cobanov.dev">Official Website</a> ·
+  <a href="https://github.com/tolgakurtuluss/pocketvibe-webos/issues">Report an Issue</a>
+</p>
 
 ---
 
-[MIT](LICENSE) · DejaVu fonts under the [Bitstream Vera license](site/public/fonts/LICENSE.txt) · Platform marks from [Simple Icons](https://simpleicons.org) (CC0)
+## What is PocketVibe for webOS?
+
+**PocketVibe for webOS is an unofficial port of [PocketVibe](https://github.com/cobanov/pocketvibe), originally created by [Mert Cobanov](https://github.com/cobanov).**
+
+This project adapts PocketVibe for compatible smart TVs running webOS, bringing its browser-based game experience from handheld gaming devices to the television screen.
+
+The original PocketVibe is a launcher, game store, and starter kit for ROCKNIX and Android handhelds. This repository explores bringing that experience to webOS-based televisions, including compatible models from LG, Sunny, Onvo, Hi-level, RCA, Ayonz, Konka, Aiwa, and Hyundai.
+
+The goal is to make it possible to browse and play web games on a TV using a compatible remote control or other supported input device.
+
+> **Important:** This is a community-developed port, not an official PocketVibe release. It is not affiliated with, endorsed by, or maintained by the original PocketVibe developer. Compatibility and feature availability depend on the TV model, webOS version, and the current state of this port.
+
+## Original project
+
+PocketVibe is an open-source project designed for retro handheld gaming devices. Its original experience includes:
+
+- **Game library:** Browse and launch web-based games.
+- **Game store:** Discover and download additional games.
+- **Three.js games:** Play games built with web technologies.
+- **AI-assisted game development:** Create games using coding agents such as Codex, Claude Code, or Cursor.
+- **Open-source ecosystem:** Explore the source code and contribute improvements.
+
+These features describe the original project. Their availability in this webOS port depends on what has been implemented and tested in this repository.
+
+Explore the original project:
+
+- [Original GitHub repository](https://github.com/cobanov/pocketvibe)
+- [Official PocketVibe website](https://pocketvibe.cobanov.dev)
+- [How PocketVibe works](https://pocketvibe.cobanov.dev/how/)
+- [AI game development guide](https://pocketvibe.cobanov.dev/make/)
+- [Original project's issue tracker](https://github.com/cobanov/pocketvibe/issues)
+
+## About the webOS port
+
+The purpose of this repository is to adapt PocketVibe to the webOS TV environment while retaining as much of the original project's experience as practical.
+
+Key areas of the port include:
+
+- **TV-compatible interface:** Adapt the launcher for television screens.
+- **Web-based gameplay:** Run compatible HTML, JavaScript, and Three.js games within the webOS environment.
+- **Remote-friendly navigation:** Work toward comfortable navigation with a TV remote or supported controller.
+- **Platform adaptation:** Account for webOS browser capabilities, device resources, and input limitations.
+- **Compatibility across devices:** Explore support for compatible webOS-based televisions from different manufacturers.
+
+This is a porting project, so implementation details, supported games, controls, and installation requirements may differ from the original handheld versions.
+
+## Supported devices
+
+The project targets compatible webOS-based smart TVs, potentially including models sold under these brands:
+
+- LG
+- Sunny
+- Onvo
+- Hi-level
+- RCA
+- Ayonz
+- Konka
+- Aiwa
+- Hyundai
+
+**Brand names do not guarantee compatibility.** Actual support depends on the operating system, web engine, hardware architecture, available resources, and application requirements of each model.
+
+See the repository's documentation and [open issues](https://github.com/tolgakurtuluss/pocketvibe-webos/issues) for current compatibility information.
+
+## Installation and development
+
+This repository contains the webOS adaptation of PocketVibe.
+
+For installation instructions, supported webOS versions, development requirements, and packaging details, refer to the documentation and scripts included in this repository.
+
+If installation instructions are not yet available for your device, check the repository's latest releases and open issues before attempting installation.
+
+## Original project downloads
+
+The following links belong to the **original PocketVibe project**. They are not webOS packages and should not be used to install this port on a television.
+
+- [Download for ROCKNIX](https://pocketvibe.cobanov.dev/download/rocknix)
+- [Download for Android](https://pocketvibe.cobanov.dev/download/android)
+- [Play in your browser](https://pocketvibe.cobanov.dev)
+
+For the webOS version, use the installation instructions and release artifacts provided by this repository.
+
+## Contributing
+
+Contributions to the webOS adaptation are welcome. You can help with compatibility testing, TV interface improvements, remote-control support, performance optimization, and bug reports.
+
+- [Report a webOS port issue](https://github.com/tolgakurtuluss/pocketvibe-webos/issues)
+- [View the webOS port source code](https://github.com/tolgakurtuluss/pocketvibe-webos)
+- [Contribute to the original PocketVibe project](https://github.com/cobanov/pocketvibe)
+
+When reporting a problem, include your TV model, webOS version, the affected feature, and any relevant logs.
+
+## Credits and license
+
+This project builds upon the ideas and work of **[PocketVibe by Mert Cobanov](https://github.com/cobanov/pocketvibe)**.
+
+The original PocketVibe project is licensed under the [MIT License](https://github.com/cobanov/pocketvibe/blob/main/LICENSE). See the original repository and its license for the terms applicable to its code and assets.
+
+The webOS adaptation may include additional code, changes, or assets. Refer to the license and notices in this repository for the terms applicable to those contributions.
+
+**PocketVibe for webOS is an independent community port.** All original project names and trademarks belong to their respective owners.
